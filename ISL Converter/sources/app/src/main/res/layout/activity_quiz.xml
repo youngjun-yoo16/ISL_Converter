@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="Scroe : "/>
+
+            <TextView
+                android:id="@+id/tv_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30sp"
+                android:text="0"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" />
+
+        <TextView
+            android:id="@+id/tv_quiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/bt_o"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="O"/>
+
+            <Button
+                android:id="@+id/bt_x"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="X"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/menu"/>
+</FrameLayout>

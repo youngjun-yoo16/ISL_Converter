@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="50sp"
+        android:text="Login" />
+
+    <TableLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:layout_gravity="center">
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ID"/>
+
+            <EditText
+                android:id="@+id/et_id"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLines="1" />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Password"/>
+
+            <EditText
+                android:id="@+id/et_pw"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLines="1" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/bt_login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_span="2"
+                android:text="Login" />
+        </TableRow>
+
+        <TableRow>
+            <Button
+                android:id="@+id/bt_findpw"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Find Password" />
+
+            <Button
+                android:id="@+id/bt_join"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Join" />
+        </TableRow>
+    </TableLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_gravity="center_horizontal|bottom"
+        android:text="Copyright \u00A9 Youngjun Yoo. All rights reserved."/>
+</FrameLayout>
